@@ -13,9 +13,16 @@
     width: 100%;
 }
 
+.card-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
 
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .aside {
         position: fixed;
         top: 0;
@@ -29,6 +36,6 @@
         left: 0;
     }
     .dashboard-chart {
-        height: 40vh;
+        height: 15rem;
     }
 }

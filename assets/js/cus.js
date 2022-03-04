@@ -30,14 +30,21 @@ const options = {
     maintainAspectRatio: false,
     plugins : {
         legend : {
-            pointStyle: 'circle',
+            align: 'end',
+            display: true,
             labels: {
+                usePointStyle: true,
             }
         }
     },
     scales: {
         y: {
+            ticks: {
+                borderColor: '#fff',
+                stepSize: 20,
+            },
             grid: {
+                borderColor: 'transparent',
                 borderDash: [3]
             }
         },
@@ -46,7 +53,8 @@ const options = {
                 display: false
             }
         }
-    }
+    },
+
 }
 
 const config = {

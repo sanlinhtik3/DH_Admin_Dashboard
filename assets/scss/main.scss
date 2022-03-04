@@ -1,0 +1,24 @@
+$font-size-base:              0.8rem;
+$border-radius:               0.625rem;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/colormyar/scss/variables";
+
+body {
+  background-color: $pdf-gray-50;
+}
+
+.card {
+  border-color: $pdf-slate-200;
+}
+
+.list-group-item-action {
+   border-radius: $border-radius;
+ }
+.list-group-item {
+  border-color: transparent!important;
+  &.active {
+    background-color: $pdf-blue-200!important;
+    color: $pdf-blue-500!important;
+  }
+}
