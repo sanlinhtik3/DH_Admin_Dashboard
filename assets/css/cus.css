@@ -25,6 +25,10 @@
     height: 15rem;
 }
 
+.focus-none:focus{
+    box-shadow: none;
+}
+
 @media screen and (max-width: 768px) {
     .aside {
         position: fixed;
