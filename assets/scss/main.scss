@@ -17,8 +17,26 @@ body {
  }
 .list-group-item {
   border-color: transparent!important;
+  border-left-width: 0.2rem!important;
   &.active {
-    background-color: $pdf-blue-200!important;
+    background-color: transparent!important;
     color: $pdf-blue-500!important;
+    font-weight: bold;
+    border-left-style: solid;
+    border-left-color: $pdf-blue-500!important;
+    border-radius: 0;
+    & i {
+      animation: oh 0.5s infinite;
+    }
+  }
+}
+
+@keyframes oh {
+  from {
+    transform: rotate(-20deg);
+    color: #dc2626;
+  }
+  to {
+    transform: rotate(20deg);
   }
 }

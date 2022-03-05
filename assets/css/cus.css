@@ -4,10 +4,6 @@
 .aside {
     width: 20rem;
 }
-.aside-body {
-    position: sticky;
-    top: 0;
-}
 
 .main {
     width: 100%;
@@ -22,6 +18,13 @@
     border-radius: 50%;
 }
 
+.dashboard-chart {
+    height: 15rem;
+}
+.user-chart {
+    height: 15rem;
+}
+
 @media screen and (max-width: 768px) {
     .aside {
         position: fixed;
@@ -31,6 +34,9 @@
         height: 100vh;
         background: #fff;
         z-index: 1041;
+    }
+    .aside-body {
+        position: relative!important;
     }
     .aside.show {
         left: 0;

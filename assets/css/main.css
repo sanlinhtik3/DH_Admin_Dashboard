@@ -11123,10 +11123,28 @@ body {
 
 .list-group-item {
   border-color: transparent !important;
+  border-left-width: 0.2rem !important;
 }
 .list-group-item.active {
-  background-color: #bfdbfe !important;
+  background-color: transparent !important;
   color: #3b82f6 !important;
+  font-weight: bold;
+  border-left-style: solid;
+  border-left-color: #3b82f6 !important;
+  border-radius: 0;
+}
+.list-group-item.active i {
+  animation: oh 0.5s infinite;
+}
+
+@keyframes oh {
+  from {
+    transform: rotate(-20deg);
+    color: #dc2626;
+  }
+  to {
+    transform: rotate(20deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
